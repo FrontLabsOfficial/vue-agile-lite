@@ -30,7 +30,7 @@
     "node": ">=12.22.0"
   },
   "bugs": {
-    "url": "https://github.com/FrontLabsOfficial/vue-agile/issues"
+    "url": "https://github.com/FrontLabsOfficial/vue-agile-lite/issues"
   },
   "keywords": [
     "vue",
@@ -42,7 +42,7 @@
   "license": "MIT",
   "repository": {
     "typetype": "git",
-    "url": "git+https://github.com/FrontLabsOfficial/vue-agile.git"
+    "url": "git+https://github.com/FrontLabsOfficial/vue-agile-lite.git"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.1",
