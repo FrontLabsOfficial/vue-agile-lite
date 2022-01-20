@@ -12,7 +12,7 @@ const preId =
   args.preid ||
   (semver.prerelease(currentVersion) && semver.prerelease(currentVersion)[0])
 const isDryRun = args.dry
-const skipTests = args.skipTests
+// const skipTests = args.skipTests
 
 const versionIncrements = [
   'patch',
@@ -22,7 +22,7 @@ const versionIncrements = [
 ]
 
 const inc = i => semver.inc(currentVersion, i, preId)
-const bin = name => path.resolve(__dirname, '../node_modules/.bin/' + name)
+// const bin = name => path.resolve(__dirname, '../node_modules/.bin/' + name)
 const run = (bin, args, opts = {}) =>
   execa(bin, args, { stdio: 'inherit', ...opts })
 const dryRun = (bin, args, opts = {}) =>
@@ -72,13 +72,13 @@ async function main() {
   }
 
   // Run test
-  step('\nRunning tests...')
+  /*step('\nRunning tests...')
   if (!skipTests && !isDryRun) {
     await run(bin('jest'), ['--clearCache'])
     await run('yarn', ['test', '--bail'])
   } else {
     console.log(`(skipped)`)
-  }
+  }*/
 
   // Update package
   step('\nUpdate package')
@@ -88,13 +88,13 @@ async function main() {
     console.log(`(skipped)`)
   }
 
-  step('\nBuilding package...')
+  /*step('\nBuilding package...')
   if (!isDryRun) {
     await run('yarn', ['build'])
     await run('yarn', ['build:dts'])
   } else {
     console.log(`(skipped)`)
-  }
+  }*/
 
   // Generate changelog
   if (!isDryRun) {

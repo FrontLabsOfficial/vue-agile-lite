@@ -11,18 +11,18 @@ header.section.section--header
           |  with smaller bundle size and better performance.
 
         .gh-buttons.visible-md
-          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lukaszflorczak/vue-agile on GitHub") Star
+          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lukaszflorczak/vue-agile on GitHub") Star
 
-          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch lukaszflorczak/vue-agile on GitHub") Watch
+          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch lukaszflorczak/vue-agile on GitHub") Watch
 
-          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue lukaszflorczak/vue-agile on GitHub") Issue
+          a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue lukaszflorczak/vue-agile on GitHub") Issue
 
       div.col-xs-12.hidden-md.gh-buttons
-        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile/vue-agile" data-icon="octicon-star" data-size="large" data-show-count="false" aria-label="Star lukaszflorczak/vue-agile on GitHub") Star
+        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite/vue-agile" data-icon="octicon-star" data-size="large" data-show-count="false" aria-label="Star lukaszflorczak/vue-agile on GitHub") Star
 
-        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile/subscription" data-icon="octicon-eye" data-size="large" data-show-count="false" aria-label="Watch lukaszflorczak/vue-agile on GitHub") Watch
+        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite/subscription" data-icon="octicon-eye" data-size="large" data-show-count="false" aria-label="Watch lukaszflorczak/vue-agile on GitHub") Watch
 
-        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="false" aria-label="Issue lukaszflorczak/vue-agile on GitHub") Issue
+        a.github-button(href="https://github.com/FrontLabsOfficial/vue-agile-lite/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="false" aria-label="Issue lukaszflorczak/vue-agile on GitHub") Issue
 
 </template>
 
