@@ -128,7 +128,7 @@ export default {
       translateX: 0,
       widthWindow: 0,
       widthContainer: 0,
-      carouselHeight: 0,
+      heightSlide: 0,
     };
   },
 
@@ -210,11 +210,17 @@ export default {
     },
 
     style: function () {
-      return `--agile-track-transform: translate(${
+      let style = `--agile-track-transform: translate(${
         this.translateX + this.marginX
       }px); --agile-track-transition: transform ${this.settings.timing} ${
         this.transitionDelay
-      }ms; height: ${this.carouselHeight}px`;
+      }ms;`;
+
+      if(this.isFitSlideHeight) {
+        style += `--agile-track-height: ${this.heightSlide}px;`;
+      }
+
+      return style;
     },
 
     widthSlide: function () {
@@ -330,7 +336,7 @@ export default {
         this.translateX = this.settings.rtl ? translateX : -1 * translateX;
       }
 
-      this.carouselHeight = this.slidesAll[this.currentSlide].offsetHeight;
+      this.heightSlide = this.slidesAll[this.currentSlide].offsetHeight;
     },
 
     // Go to next slide
@@ -400,6 +406,7 @@ export default {
   flex-wrap: nowrap;
   transform: var(--agile-track-transform);
   transition: var(--agile-track-transition);
+  height: var(--agile-track-height);
 }
 
 .agile__actions {
