@@ -128,6 +128,7 @@ export default {
       translateX: 0,
       widthWindow: 0,
       widthContainer: 0,
+      carouselHeight: 0,
     };
   },
 
@@ -213,7 +214,7 @@ export default {
         this.translateX + this.marginX
       }px); --agile-track-transition: transform ${this.settings.timing} ${
         this.transitionDelay
-      }ms`;
+      }ms; height: ${this.carouselHeight}px`;
     },
 
     widthSlide: function () {
@@ -328,6 +329,8 @@ export default {
       ) {
         this.translateX = this.settings.rtl ? translateX : -1 * translateX;
       }
+
+      this.carouselHeight = this.slidesAll[this.currentSlide].offsetHeight;
     },
 
     // Go to next slide
