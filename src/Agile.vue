@@ -210,17 +210,11 @@ export default {
     },
 
     style: function () {
-      let style = `--agile-track-transform: translate(${
+      return `--agile-track-transform: translate(${
         this.translateX + this.marginX
       }px); --agile-track-transition: transform ${this.settings.timing} ${
         this.transitionDelay
-      }ms;`;
-
-      if(this.isFitSlideHeight) {
-        style += `--agile-track-height: ${this.heightSlide}px;`;
-      }
-
-      return style;
+      }ms; --agile-track-height: ${this.isFitSlideHeight ? `${this.heightSlide}px` : 'auto'}`;
     },
 
     widthSlide: function () {
@@ -335,8 +329,6 @@ export default {
       ) {
         this.translateX = this.settings.rtl ? translateX : -1 * translateX;
       }
-
-      this.heightSlide = this.slidesAll[this.currentSlide].offsetHeight;
     },
 
     // Go to next slide
