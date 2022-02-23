@@ -128,6 +128,7 @@ export default {
       translateX: 0,
       widthWindow: 0,
       widthContainer: 0,
+      heightSlide: 0,
     };
   },
 
@@ -213,7 +214,7 @@ export default {
         this.translateX + this.marginX
       }px); --agile-track-transition: transform ${this.settings.timing} ${
         this.transitionDelay
-      }ms`;
+      }ms; --agile-track-height: ${this.isFitSlideHeight ? `${this.heightSlide}px` : 'auto'}`;
     },
 
     widthSlide: function () {
@@ -397,6 +398,7 @@ export default {
   flex-wrap: nowrap;
   transform: var(--agile-track-transform);
   transition: var(--agile-track-transition);
+  height: var(--agile-track-height);
 }
 
 .agile__actions {

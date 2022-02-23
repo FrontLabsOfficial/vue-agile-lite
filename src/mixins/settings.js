@@ -205,6 +205,14 @@ const mixin = {
       type: Boolean,
       default: false,
     },
+
+    /**
+     * Agile carousel height fit with slide height
+     */
+     isFitSlideHeight: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   computed: {

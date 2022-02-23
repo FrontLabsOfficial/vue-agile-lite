@@ -16,6 +16,9 @@ const mixin = {
       // Set start time of slide
       this.autoplayStartTimestamp = this.settings.autoplay ? +new Date() : null;
 
+      //get height of slide
+      this.heightSlide = this.slidesAll[this.currentSlide].offsetHeight;
+
       this.$emit('after-change', { currentSlide: this.currentSlide });
     },
 
