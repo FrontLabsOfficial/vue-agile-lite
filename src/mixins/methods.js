@@ -56,6 +56,11 @@ const mixin = {
           : 'none';
       }
     },
+
+    updateCarouselHeight() {
+      //get height of slide
+      this.heightSlide = this.slidesAll[this.currentSlide].offsetHeight;
+    },
   },
 };
 

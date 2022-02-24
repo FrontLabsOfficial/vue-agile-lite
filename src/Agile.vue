@@ -248,7 +248,7 @@ export default {
 
   methods: {
     destroy() {
-      window.removeEventListener('resize', this.getWidth);
+      window.removeEventListener('resize', this.onResize);
 
       this.$refs.track.removeEventListener('touchstart', this.handleMouseDown);
       this.$refs.track.removeEventListener('touchend', this.handleMouseUp);
@@ -350,8 +350,15 @@ export default {
       this.getWidth();
       this.prepareSlides();
       this.prepareCarousel();
+      this.updateCarouselHeight();
       this.toggleFade();
       this.toggleAutoPlay();
+    },
+
+    // On resize
+    onResize() {
+      this.getWidth();
+      this.updateCarouselHeight();
     },
   },
 };
