@@ -226,7 +226,7 @@ export default {
 
   mounted() {
     // Windows resize listener
-    window.addEventListener('resize', this.getWidth);
+    window.addEventListener('resize', this.onResize);
 
     // Mouse and touch events
     this.$refs.track.addEventListener('touchstart', this.handleMouseDown);
