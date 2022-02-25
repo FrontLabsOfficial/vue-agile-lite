@@ -1,3 +1,13 @@
+## [1.0.4](https://github.com/FrontLabsOfficial/vue-agile-lite/compare/v1.0.3...v1.0.4) (2022-02-25)
+
+
+### Bug Fixes
+
+* **carousel:** fix bug carousel and add method ([dd5ad12](https://github.com/FrontLabsOfficial/vue-agile-lite/commit/dd5ad12a2d40a4cb0d5de7405f40815865a6ab3f))
+* **carousel:** update resize ([148091a](https://github.com/FrontLabsOfficial/vue-agile-lite/commit/148091a490bcb1cc90466ea223187cdf50723f55))
+
+
+
 ## [1.0.3](https://github.com/FrontLabsOfficial/vue-agile-lite/compare/v1.0.2...v1.0.3) (2022-02-23)
 
 
